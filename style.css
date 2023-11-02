@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Lumanosimo', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  /* Style for the navigation bar */
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:rgb(231,236,234); */
+    color: rgb(108,159,213);
+    height: 6vh;
+  }
+  
+/* Style for the left side of the navigation bar */
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    color: black;
+  }
+
+/* Style for the right side of the navigation bar */
+
+  .navbar-right {
+    display: flex;
+    margin-left:auto ;
+    margin-right: 1vw;
+  }
+  .nav-home {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(108,159,213);
+    /* color: black; */
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+  }
+  .nav-home:hover {
+    background-color: rgb(108,159,213);
+    color: rgb(255, 255, 255); 
+    transition: .5s;
+    cursor: pointer;
+  } 
+  .nav-faculty_members {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(108,159,213);
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+  }
+  .nav-faculty_members:hover {
+    background-color: rgb(108,159,213);
+    color: rgb(255, 255, 255); 
+    transition: .5s;
+    cursor: pointer;
+  } 
+  .nav-programs {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(108,159,213);
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+  }
+  .nav-programs:hover {
+    background-color: rgb(108,159,213);
+    color: rgb(255, 255, 255);  
+    transition: .5s;
+    cursor: pointer;
+  } 
+  .nav-syllabus {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(108,159,213);
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+  }
+  .nav-syllabus:hover {
+    background-color: rgb(108,159,213);
+    color: rgb(255, 255, 255); 
+    transition: .5s;
+    cursor: pointer;
+  } 
+  .nav-news {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(108,159,213);
+    font-weight: bold;
+    display: block;
+    border-radius: 5px;
+  }
+  .nav-news:hover {
+    background-color: rgb(108,159,213);
+    color: rgb(255, 255, 255); 
+    transition: .5s;
+    cursor: pointer;
+  } 
+
+
+
+
+
+
+
+.home{
+  max-width: 1200px;
+  /* height: auto; */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  /* border: 2px solid rgb(108,159,213); */
+  background-color: rgb(255, 255, 255);
+  /* margin-left: 2vw; */
+  /* margin-right: 2vw; */
+  /* margin-top: 1vh; */
+  /* border-radius: 10px; */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  /* display: flex;
+  flex-direction: column; */
+  /* border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px; */
+}
+.home-h1{
+  margin-left: 2vw;
+  color: rgb(108,159,213);
+  /* color: rgb(0, 0, 0); */
+ 
+}
+.home-h2{
+  margin-left: 2vw;
+  color: rgb(0, 0, 0);
+}
+.home p{
+  margin-left: 2vw;
+  margin-right: 2vw;
+  
+}
+.contact-info{
+  width:20vw;
+  height: 35vh;
+  background-color: rgb(148, 190, 235);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 2vw;
+  border-radius: 10px;
+  margin-bottom: 1vh;
+}
+.contact-details{
+  margin-left: 2vw;
+}
+
+.contact-details h1 {
+  color: rgb(255, 255, 255);
+  font-family: 'Lumanosimo', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+  @media screen and (max-width: 768px) {
+    .navbar-right {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      /* background-color: #f2f2f2b3; */
+      background-color: #fff;
+      z-index: 1;
+      border-radius: 10px;
+    }
+  
+    .navbar-right.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .line {
+      width: 25px;
+      height: 3px;
+      background-color:rgb(108,159,213);
+      margin: 5px;
+    }
+    .contact-info{
+      width:auto;
+      height: 30vh;
+      background-color: rgb(148, 190, 235);
+      margin-left: 2vw;
+      margin-right: 2vw;
+      border-radius: 10px;
+    }
+    .home{
+      border-radius: 10px;
+    }
+  }
